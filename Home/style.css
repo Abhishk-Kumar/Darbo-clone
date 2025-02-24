@@ -1,0 +1,526 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+   
+}
+
+.navbar .center img {
+    height: 20px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .left,
+.navbar .right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .right a {
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+
+.navbar .right a:hover {
+    background-color: red;
+    color: #2c1e16;
+}
+
+.main-content {
+    text-align: center;
+    padding: 2px 0;
+    position: relative;
+}
+
+.main-content img {
+    width: 100%;
+    max-width: 1450px;
+    height: auto;
+}
+
+.main-content .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.main-content .overlay h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin: 0;
+}
+
+.main-content .overlay p {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.main-content .overlay button {
+    background-color: #bfa07a;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-content .overlay button:hover {
+    background-color: #a68963;
+}
+
+.play-video {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.play-video i {
+    font-size: 24px;
+}
+
+
+
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.products .product {
+    text-align: center;
+    color: #333;
+}
+
+.products .product img {
+    max-width: 100px;
+    height: auto;
+}
+
+.products .product p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.text-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.text-section .company-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    line-height: 1.6;
+    padding: 0 100px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+
+    .products .product {
+        margin-bottom: 20px;
+    }
+}
+
+
+.image-portion {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+
+.left-section img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.right-section img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.txt-section {
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .image-portion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+}
+
+
+
+
+.her {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.her img {
+    width: 100%;
+    height: 650px;
+}
+
+.her .contt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255);
+    padding: 20px;
+    border-radius: 50px 10px;
+    width: 300px;
+    color: black;
+}
+
+.her .contt h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.her .contt img {
+    width: 100px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.her .contt p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.her .discover {
+    position: absolute;
+    bottom: 300px;
+    right: 20px;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transform: rotate(-90deg);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+
+    .her .contt {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .her .contt h1 {
+        font-size: 20px;
+    }
+
+    .her .contt p {
+        font-size: 14px;
+    }
+
+    .her .discover {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+
+
+.pro-sect {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pro-sect h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pro-sect p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #d3b8a1;
+    margin-bottom: 50px;
+}
+
+.proucts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.prouct {
+    width: 22%;
+    background-color: #f8f5f2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.prouct img {
+    width: 100%;
+    height: auto;
+}
+
+.prouct h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin: 20px 0 10px;
+}
+
+.prouct p {
+    font-size: 14px;
+    color: #000;
+}
+
+.prouct h2.baking {
+    color: #d3b8a1;
+}
+
+@media (max-width: 768px) {
+    .prouct {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .prouct {
+        width: 100%;
+    }
+}
+
+
+
+.social-sect{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.social-sect h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.social-sect .widget {
+    background-color: #e8dfd3;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.social-sect .widget h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #a07f6b;
+}
+
+.social-sect .widget p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.social-sect .widget button {
+    background-color: #b89c83;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.social-sect .widget button:hover {
+    background-color: #a07f6b;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.contact-buttons a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-buttons a.contact {
+    background-color: #000;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin: 10px;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+footer p,
+footer a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+footer .social-icons i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .bottom-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-buttons a {
+        margin: 5px 0;
+    }
+
+    footer .bottom-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

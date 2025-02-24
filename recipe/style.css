@@ -1,0 +1,264 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+}
+
+.navbar .center img {
+    height: 20px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .left,
+.navbar .right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .right a {
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+
+.navbar .right a:hover {
+    background-color: red;
+    color: #2c1e16;
+}
+.breadcrumb {
+    padding: 20px 40px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    text-align: center;
+    padding: 40px;
+}
+
+.main-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.fruit-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fruit-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.fruit-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.fruit-item p {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #555;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content .item {
+    width: 23%;
+    margin: 1%;
+    text-align: center;
+}
+
+.content .item img {
+    width: 100%;
+    height: auto;
+}
+
+.content .item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.content .item .stars {
+    color: #d4af37;
+}
+
+@media (max-width: 768px) {
+    .content .item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content .item {
+        width: 98%;
+    }
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.contact-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.contact-buttons a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-buttons a.contact {
+    background-color: #000;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin: 10px;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+footer p,
+footer a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+footer .social-icons i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+footer .bottom-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+    
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-buttons a {
+        margin: 5px 0;
+    }
+
+    footer .bottom-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
