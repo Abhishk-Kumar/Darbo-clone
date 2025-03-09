@@ -120,10 +120,12 @@ body {
 .products .product {
     text-align: center;
     color: #333;
+    font-size: 25px;
 }
 
 .products .product img {
-    max-width: 100px;
+    max-width: 500px;
+    width: 200px;
     height: auto;
 }
 
